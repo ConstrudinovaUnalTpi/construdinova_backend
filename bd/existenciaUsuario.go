@@ -8,8 +8,8 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 )
 
-func ChequeoYaExisteUsuario(email string) (models.User, bool, string) {
-	ctx, cancel := context.WithTimeout(context.Background(), 15 *- time.Second)
+func ExistenciaUsuario(email string) (models.User, bool, string) {
+	ctx, cancel := context.WithTimeout(context.Background(), 15 * time.Second)
 	defer cancel()
 
 	db := MongoCN.Database("construdinova_db")
