@@ -2,7 +2,6 @@ package main
 
 import (
 	"log"
-
 	"github.com/felipe1297/construdinova_backend/bd"
 	"github.com/felipe1297/construdinova_backend/handlers"
 )
